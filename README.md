@@ -1,5 +1,4 @@
-# Gyro-based Neural Single Image Deblurring
-## Official repository of the CVPR 2025 paper
+## Gyro-based Neural Single Image Deblurring<br><sub>Official Repository of the CVPR 2025 Paper</sub>
 
 
 ## News
