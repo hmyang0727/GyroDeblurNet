@@ -6,6 +6,3 @@
 
 ## TODO
 - [ ] Code & Dataset release
-
-
-**Plese stay tuned for any updates of the dataset and code!**
