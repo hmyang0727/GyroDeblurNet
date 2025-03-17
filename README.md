@@ -1,4 +1,4 @@
-## Gyro-based Neural Single Image Deblurring
+## Gyro-based Neural Single Image Deblurring (CVPR 2025)
 
 
 ## News
