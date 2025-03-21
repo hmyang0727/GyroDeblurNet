@@ -20,6 +20,9 @@ Will be updated
 
 #### GyroBlur-Real Dataset
 
+### Pretrained Weight
+[Google Drive]
+
 </details>
 
 ## TODO
