@@ -6,8 +6,6 @@
 
 ## Download
 
-### Dataset 
-| Dataset | Link |
 | :-----: | :--:  | 
 | GyroBlur-Synth | [Google Drive](https://drive.google.com/file/d/1s_B662ro7D3RaxN1w_gYRSTIvDoyzg17/view?usp=sharing)|
 | GyroBlur-Real  | [Google Drive] |
