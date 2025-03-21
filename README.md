@@ -9,8 +9,9 @@
 ### Dataset 
 | Dataset | Link |
 | :-----: | :--:  | 
-| GyroBlur-Synth | [Google Drive Link](https://drive.google.com/file/d/1s_B662ro7D3RaxN1w_gYRSTIvDoyzg17/view?usp=sharing)|
-| GyroBlur-Real  | [Google Drive Link] |
+| GyroBlur-Synth | [Google Drive](https://drive.google.com/file/d/1s_B662ro7D3RaxN1w_gYRSTIvDoyzg17/view?usp=sharing)|
+| GyroBlur-Real  | [Google Drive] |
+| Pretrained Weight  | [Google Drive] |
 
 <details>
 <summary><strong>Descriptions</strong> (click) </summary>
@@ -22,9 +23,6 @@ Will be updated
 #### GyroBlur-Real Dataset
 
 </details>
-
-### Pretrained Weights
-[Pretrained weight]
 
 ## TODO
 - [ ] Code & Dataset release
