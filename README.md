@@ -8,7 +8,7 @@
 
 | Dataset| Link |
 | :-----: | :--:  | 
-| GyroBlur-Synth | [Google Drive](https://drive.google.com/file/d/1s_B662ro7D3RaxN1w_gYRSTIvDoyzg17/view?usp=sharing)|
+| GyroBlur-Synth | [Google Drive](https://drive.google.com/drive/folders/1Bv-A2biucSXWS8EwwoLVzREDcwoDrjzi?usp=drive_link)|
 | GyroBlur-Real  | [Google Drive](https://drive.google.com/drive/folders/1l7TJ9qQCmLAY8FVV4t13x4rahcczw_Lz?usp=drive_link) |
 
 <details>
