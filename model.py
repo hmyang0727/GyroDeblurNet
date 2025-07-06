@@ -103,7 +103,7 @@ class NAFBlock(nn.Module):
         return y + x * self.gamma
 
 
-class GyroRefinementBlock(nn.Module):  # Previously GyroTemporalAlignBlock
+class GyroRefinementBlock(nn.Module):
     def __init__(self, c_gyro, c_blur):
         super().__init__()
 
@@ -154,7 +154,7 @@ class GyroBlock(nn.Module):
         return feat, feat_gyro
 
 
-class GyroDeblurringBlock(nn.Module):  # Previously, ConcatBlock
+class GyroDeblurringBlock(nn.Module):
     def __init__(self, channel):
         super().__init__()
         
@@ -182,7 +182,7 @@ class GyroDeblurringBlock(nn.Module):  # Previously, ConcatBlock
         return feat, feat_gyro
     
 
-class GyroDeblurNet(nn.Module):  # Previously, NAFNet
+class GyroDeblurNet(nn.Module):
     def __init__(self, img_channel=3, gyro_channel=16, width=16, middle_blk_num=1, enc_blk_nums=[], dec_blk_nums=[]):
         super().__init__()
 
@@ -192,10 +192,10 @@ class GyroDeblurNet(nn.Module):  # Previously, NAFNet
                               bias=True)
 
         self.encoders = nn.ModuleList()
-        self.gyro_refine_blks = nn.ModuleList()  # Previously, temp_align_blks
+        self.gyro_refine_blks = nn.ModuleList()
         self.decoders = nn.ModuleList()
         self.middle_blks = nn.ModuleList()
-        self.gyro_deblurring_blks = nn.ModuleList()  # Previously, middle_gyro_blks
+        self.gyro_deblurring_blks = nn.ModuleList()
         self.ups = nn.ModuleList()
         self.downs = nn.ModuleList()
 
@@ -249,7 +249,6 @@ class GyroDeblurNet(nn.Module):  # Previously, NAFNet
 
         encs = []
 
-        # x_gyro = self.intro_gyro(gyro)  # B x 64 x H/2 x W/2
         x_gyro_acc = self.intro_gyro(gyro_acc)  # B x 64 x H/2 x W/2
         x_gyro_inacc = self.intro_gyro(gyro_inacc)
         alpha = (epoch//10)*0.1 if epoch < 100 else 1
@@ -289,10 +288,6 @@ class GyroDeblurNet(nn.Module):  # Previously, NAFNet
 if __name__ == '__main__':
     img_channel = 3
     width = 32
-
-    # enc_blks = [2, 2, 4, 8]
-    # middle_blk_num = 12
-    # dec_blks = [2, 2, 2, 2]
 
     enc_blks = [2, 2, 2]
     middle_blk_num = 16
