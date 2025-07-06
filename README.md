@@ -25,7 +25,7 @@ GyroBlur-Synth
 │   └── GyroBlur-Synth_train_starting_point.txt: Starting point of images in the raw gyro data sequence
 ├── test (Test data)
 │   ├── avg_blur: Blurred images 
-│   ├── sat_mask: Saturation masks for RSBlur pipeline (For detail, refer to the RSBlur paper)
+│   ├── sat_mask: Saturation masks for RSBlur pipeline (For detail, refer to the RSBlur paper). For the test dataset, saturations have already been added to the blurred images.
 │   ├── sharp: Ground-truth images
 │   └── GyroBlur-Synth_test_starting_point.txt: Starting point of each images in the raw gyro data sequence
 ├── gyro_train.txt: Raw gyro data sequence for the training data
