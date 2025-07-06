@@ -3,6 +3,7 @@
 
 ## News
 - [2025.02.27] GyroDeblurNet is accepted to CVPR 2025!
+- [2025.07.06] Model and testing code have been released.
 
 ## Download
 
