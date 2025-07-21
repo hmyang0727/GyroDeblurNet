@@ -42,10 +42,10 @@ Description will be added
 
 ## How to use
 ### Generating camera motion field
-`generate_camera_motion_field.py` file contains code for generating camera motion field.
-Note that the code generates camera motion field that corresponds to the given gyro data without any perturbation.
-If you want to add some perturbations to the camera motion field, you need to implement your own routine.
-The code contains camera intrinsic matrix of the 4KRD dataset, which is the source of GyroBlur-Synth sharp images.
+`generate_camera_motion_field.py` file contains code for generating camera motion field.  
+Note that the code generates camera motion field that corresponds to the given gyro data without any perturbation.  
+If you want to add some perturbations to the camera motion field, you need to implement your own routine.  
+The code contains camera intrinsic matrix of the 4KRD dataset, which is the source of GyroBlur-Synth sharp images.  
 If you apply the code to other images, you need to change the intrinsic.
 
 ## TODO
