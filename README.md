@@ -36,7 +36,19 @@ For example, n-th line of the file corresponds to the n-th image when the images
 If the n-th line of the file is 1234, then the gyro data of n-th image can be retrieved from the raw gyro data sequence by slicing its 1234-th line and 1244-th line since we use 11 gyro data to generate a blurred image.
 
 ### GyroBlur-Real dataset
-Description will be added
+```md
+GyroBlur-Real
+├── 001 (Scene number)
+│   ├── blurry.dng: Blurred image in RAW format
+│   ├── blurry.png: Blurred image in PNG format
+│   ├── image_info.txt: Image metadata that consists of image timestamp (ns), camera ISO, exposure time (ns), f_x, f_y, c_x, c_y, s
+│   └── gyro.txt: Raw gyro data sequence that is collected with the image
+├── 002
+│   ├── ...
+├── ...
+```
+Each line of `gyro.txt` consists of gyro sample timestamp (ns), angular velocity of x-axis, angular velocity of y-axis and angular velocity of z-axis.
+In order to use the raw gyro data, you first need to find the gyro data sequence that corresponds to the image timestamp and exposure time.
 
 </details>
 
