@@ -47,7 +47,7 @@ GyroBlur-Real
 │   ├── ...
 ├── ...
 ```
-Each line of `gyro.txt` consists of gyro sample timestamp (ns), angular velocity of x-axis, angular velocity of y-axis and angular velocity of z-axis.
+Each line of `gyro.txt` consists of gyro sample timestamp (ns), angular velocity of x-axis, angular velocity of y-axis and angular velocity of z-axis.  
 In order to use the raw gyro data, you first need to find the gyro data sequence that corresponds to the image timestamp and exposure time.
 
 </details>
