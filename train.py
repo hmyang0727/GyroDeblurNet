@@ -10,12 +10,12 @@ import os
 import scipy
 
 
-class GSBlurDataset(torch.utils.data.Dataset):
+class GyroBlurDataset(torch.utils.data.Dataset):
     def __init__(self, args):
         self.blur_imgs = sorted(glob(os.path.join(args.blur_dir, '*.png')))
         self.sharp_imgs = sorted(glob(os.path.join(args.sharp_dir, '*.png')))
         self.sat_mask_files = sorted(glob(os.path.join(args.sat_dir, '*.png')))
-        self.cmf_files_inacc_files_inacc = sorted(glob(os.path.join(args.cmf_inacc_dir, '*.npy')))
+        self.cmf_files_inacc = sorted(glob(os.path.join(args.cmf_inacc_dir, '*.npy')))
         self.cmf_files_acc = sorted(glob(os.path.join(args.cmf_acc_dir, '*.npy')))
 
         self.current_epoch = 0
@@ -134,7 +134,7 @@ def main_worker(gpu, ngpus_per_node, args):
                 os.remove(args.loss_file)
         start_epoch = 0
 
-    train_dataset = GSBlurDataset(args)
+    train_dataset = GyroBlurDataset(args)
     train_sampler = torch.utils.data.distributed.DistributedSampler(train_dataset)  # torch.utils.data.distributed.DistributedSampler automatically shuffles the indices.
     train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=args.batch_size, shuffle=False, num_workers=args.workers, pin_memory=True, sampler=train_sampler)
 
